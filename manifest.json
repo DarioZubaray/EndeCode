@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Encode - Decode: URL",
+  "version": "1.0",
+  "description": "Codifique o decodifique URLs.",
+  "minimum_chrome_version": "23",  
+  "content_security_policy": "default-src 'self'",
+  "icons": {
+    "16": "img/icono_16.png",
+    "128": "img/icono_128.png"
+  },
+   "browser_action": {
+      "default_title": "En-De Code",
+      "default_icon": "img/icono_16.png",
+      "default_popup": "popup.html"
+  }
+}
