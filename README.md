@@ -1,29 +1,33 @@
-# README #
+# EndeCode #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Chrome plugin extension para codificar/decodificar cadenas de textos a tráves de las funciones de javascript vanilla:
+- encodeURIComponent/decodeURIComponent
+- encodeURI/decodeURI
 
-### What is this repository for? ###
+## Codificar
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Entrada
 
-### How do I get set up? ###
+´´´
+{call img_consulta_articulo (?,?)}
+´´´
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Salida (__Con__ __caracteres__ __especiales__)
 
-### Contribution guidelines ###
+´´´
+%7Bcall%20img_consulta_articulo%20(%3F%2C%3F)%7D
+´´´
 
-* Writing tests
-* Code review
-* Other guidelines
+## Decodificar
 
-### Who do I talk to? ###
+* Entrada
 
-* Repo owner or admin
-* Other community or team contact
+´´´
+YPF%20anunci%C3%B3%20que%20baja%20el%20precio%20del%20combustible
+´´´
+
+* Salida
+
+´´´
+YPF anunció que baja el precio del combustible
+´´´
