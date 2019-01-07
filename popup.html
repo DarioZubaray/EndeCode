@@ -2,25 +2,52 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popup.js"></script>
 </head>
 <body>
-	<p>{call img_consulta_articulo (?,?)}</p>
-	<br/>
-	<fieldset>
-		<legend>Soy legenda</legend>
-		<textarea id="urlInput" rows="4" cols="50" name="comment" ></textarea>
-		<br/>
-		<div id="botones">
-			<button id="encodeBtn" type="button">Encodear</button>
-			<button id="decodeBtn" type="button">Desencodear</button>
-			<input id="caracteresEspeciales" type="checkbox" name="vehicle" value="caracteresEspeciales">Caracteres Especiales
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" >
+				<p>{call img_consulta_articulo (?,?)}</p>
+			</div>
 		</div>
-		<textarea id="urlOutput" rows="4" cols="50" name="comment" ></textarea>
-	</fieldset>
-	<br/>
-	<p>%7Bcall%20img_consulta_articulo%20(%3F%2C%3F)%7D</p>
+		<div class="row">
+			<div class="col-md-12" >
+				<fieldset class="border p-2">
+					<legend class="w-auto">Soy legenda</legend>
+					<textarea id="urlInput" class="form-control noresize" rows="4" cols="50" name="comment" ></textarea>
+					<br/>
+					<div id="botones">
+						<button id="encodeBtn" type="button" class="btn btn-secondary">Encodear</button>
+						<button id="decodeBtn" type="button" class="btn btn-secondary">Desencodear</button>
+						<div class="form-check">
+							<input id="caracteresEspeciales" type="checkbox" class="form-check-input" name="vehicle" value="caracteresEspeciales">Caracteres Especiales
+						</div>
+					</div>
+					<textarea id="urlOutput" class="form-control noresize" rows="4" cols="50" name="comment" ></textarea>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" >
+				<p>%7Bcall%20img_consulta_articulo%20(%3F%2C%3F)%7D</p>
+			</div>
+		</div>
+
+		<!-- <fieldset class="border p-2">
+			<legend class="w-auto">Soy legenda</legend>
+			<textarea id="urlInput" class="form-control" rows="4" cols="50" name="comment" ></textarea>
+			<br/>
+			<div id="botones">
+				<button id="encodeBtn" type="button" class="btn btn-secondary">Encodear</button>
+				<button id="decodeBtn" type="button" class="btn btn-secondary">Desencodear</button>
+				<input id="caracteresEspeciales" type="checkbox" class="form-check-input" name="vehicle" value="caracteresEspeciales">Caracteres Especiales
+			</div>
+			<textarea id="urlOutput" class="form-control" rows="4" cols="50" name="comment" ></textarea>
+		</fieldset> -->
+	</div>
 
 </body>
 </html>

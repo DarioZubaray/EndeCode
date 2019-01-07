@@ -1,1 +1,7 @@
-#botones{ margin-left: 20px; margin-bottom: 5px;}
+#botones{ 
+    margin-left: 20px; 
+    margin-bottom: 5px;
+}
+.noresize {
+    resize: none; 
+}
