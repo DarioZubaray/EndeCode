@@ -1,7 +1,18 @@
-#botones{ 
-    margin-left: 20px; 
-    margin-bottom: 5px;
+body {
+    min-width: 550px;
 }
+
+#botones{
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+}
+
 .noresize {
     resize: none; 
 }
